@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #dddd;
+  color: black;
+
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="topnav">
+    <a href="#">LINK</a>
+    <a href="#">LINK</a>
+    <a href="#">LINK</a>
+    <a href="#">LINK</a>
+    <a href="#">LINK</a>
+    <a href="#">LINK</a>
+  </div>
+  
+
+<div class="row">
+  <div class="column" style="background-color:#ddd;">
+    <h2>Column 1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      At saepe esse accusamus laborum porro praesentium odit corporis eos eveniet, 
+      consequatur facilis quibusdam perferendis veniam quisquam et 
+      quaerat vero fugiat asperiores.</p>
+  </div>
+  
+  <div class="column" style="background-color:#ddd;">
+    <h2>Column 2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      At saepe esse accusamus laborum porro praesentium odit corporis eos eveniet, 
+      consequatur facilis quibusdam perferendis veniam quisquam et 
+      quaerat vero fugiat asperiores.</p>
+  </div>
+  
+  <div class="column" style="background-color:#ddd;">
+    <h2>Column 3</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      At saepe esse accusamus laborum porro praesentium odit corporis eos eveniet, 
+      consequatur facilis quibusdam perferendis veniam quisquam et 
+      quaerat vero fugiat asperiores.</p>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+    <h2>Column 4</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      At saepe esse accusamus laborum porro praesentium odit corporis eos eveniet, 
+      consequatur facilis quibusdam perferendis veniam quisquam et 
+      quaerat vero fugiat asperiores.</p>
+  </div>
+</div>
+
+</body>
+</html>
